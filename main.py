@@ -11,8 +11,8 @@ import sys
 mod_map = {
     64: "SUPER",
     8: "ALT",
-    4: "CTRL",
     1: "SHIFT",
+    4: "CTRL",
 }
 
 
