@@ -28,8 +28,8 @@ Flags:
 2. Configure hyprland to execute it. For example:
 
 ```
-# SUPER + ? (with alignment)
-bind = SUPER_SHIFT, slash, exec, python $XDG_CONFIG_HOME/hypr/scripts/rofi_binds.py -a
+# SUPER + ?
+bind = SUPER_SHIFT, slash, exec, python $XDG_CONFIG_HOME/hypr/scripts/rofi_binds.py
 ```
 
 ## Acknowledgements
