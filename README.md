@@ -12,6 +12,15 @@ Access and execute defined binds using rofi.
 - `rofi`
 - `hyprland`
 
+## Usage
+
+Run `main.py -h` to see up to date available options.
+
+Flags:
+
+- `-A` - disable column alignment
+- after `--` - command to run rofi with (default: `rofi -dmenu -i -markup-rows -p bindings`)
+
 ## Installation
 
 1. Download the script [`main.py`](./main.py)
@@ -19,8 +28,8 @@ Access and execute defined binds using rofi.
 2. Configure hyprland to execute it. For example:
 
 ```
-# SUPER + ?
-bind = SUPER_SHIFT, slash, exec, python $XDG_CONFIG_HOME/hypr/scripts/rofi_binds.py
+# SUPER + ? (with alignment)
+bind = SUPER_SHIFT, slash, exec, python $XDG_CONFIG_HOME/hypr/scripts/rofi_binds.py -a
 ```
 
 ## Acknowledgements

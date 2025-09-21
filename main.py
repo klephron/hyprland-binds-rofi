@@ -57,7 +57,7 @@ def get_rofi_input(align: bool = False) -> str:
         modkey = (
             bind[0] + " " * (modkey_mxlen - len(bind[0]))
             if modkey_mxlen != -1
-            else bind[0]
+            else bind[0] + ":"
         )
         bindstr = (
             f'<span color="lightgray">{modkey}</span> '
@@ -92,7 +92,13 @@ def parse_args():
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
         usage="%(prog)s [options] [-- rofi_cmd...]",
     )
-    parser.add_argument("-a", "--align", default=True, type=bool, help="Align rows")
+    parser.add_argument(
+        "-A",
+        "--no-align",
+        default=False,
+        help="disable column alignment",
+        action="store_true",
+    )
 
     if "--" in sys.argv:
         idx = sys.argv.index("--")
@@ -102,14 +108,16 @@ def parse_args():
 
     args = parser.parse_args(argv)
 
-    return (args.align, rofi_cmd)
+    align = not args.no_align
+
+    return (align, rofi_cmd)
 
 
 def main():
     (align, rofi_cmd) = parse_args()
 
     if len(rofi_cmd) == 0:
-        rofi_cmd = ["rofi", "-dmenu", "-i", "-markup-rows", "-p", "keybinds"]
+        rofi_cmd = ["rofi", "-dmenu", "-i", "-markup-rows", "-p", "bindings"]
 
     rofi_input = get_rofi_input(align=align)
 
