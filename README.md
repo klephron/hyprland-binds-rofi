@@ -32,8 +32,6 @@ Flags:
 bind = SUPER_SHIFT, slash,  exec, python $XDG_CONFIG_HOME/hypr/scripts/hyprland-binds-rofi/main.py
 ```
 
-## Acknowledgements
+## License
 
-Thanks to the open-source contributors who provided important inspiration and reference for the development:
-
-- [mellotanica/rofi-hyprland-keybinds-cheatsheet](https://github.com/mellotanica/rofi-hyprland-keybinds-cheatsheet)
+[MIT License](./LICENSE)
