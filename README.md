@@ -29,7 +29,7 @@ Flags:
 
 ```
 # SUPER + ?
-bind = SUPER_SHIFT, slash, exec, python $XDG_CONFIG_HOME/hypr/scripts/rofi_binds.py
+bind = SUPER_SHIFT, slash,  exec, python $XDG_CONFIG_HOME/hypr/scripts/hyprland-binds-rofi/main.py
 ```
 
 ## Acknowledgements
