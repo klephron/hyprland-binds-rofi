@@ -34,6 +34,6 @@ bind = SUPER_SHIFT, slash, exec, python $XDG_CONFIG_HOME/hypr/scripts/rofi_binds
 
 ## Acknowledgements
 
-Appreciation to the contributors, which provided important inspiration and reference for the development:
+Thanks to the open-source contributors who provided important inspiration and reference for the development:
 
 - [mellotanica/rofi-hyprland-keybinds-cheatsheet](https://github.com/mellotanica/rofi-hyprland-keybinds-cheatsheet)
