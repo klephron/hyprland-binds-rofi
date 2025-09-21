@@ -23,7 +23,7 @@ Flags:
 
 ## Installation
 
-1. Download the script [`main.py`](./main.py)
+1. Download [`main.py`](./main.py)
 
 2. Configure hyprland to execute it. For example:
 
